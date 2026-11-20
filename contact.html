@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact — SaveByte</title>
+    <meta name="description" content="Send a message to James Berryman.">
+    <meta name="theme-color" content="#02102e">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="images/icon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="images/icon-16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="images/icon-180.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/site.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/icon-192.png" width="192" height="192" alt="">
+          <span>SaveByte</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap page">
+        <h1>Contact</h1>
+        <p>Send a message to James Berryman.</p>
+        <div class="contact-layout">
+          <p>Messages go through <a href="https://formspree.io" rel="noopener noreferrer">Formspree</a>. Write only what you would put in an email.</p>
+          <div>
+            <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div id="error-summary" class="error-summary" hidden tabindex="-1">
+                <p id="error-summary-title">Please fix the following:</p>
+                <ul id="error-list"></ul>
+              </div>
+              <p id="send-error" class="form-error" hidden tabindex="-1"></p>
+              <p class="hp" aria-hidden="true">
+                <label for="company">Company</label>
+                <input id="company" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+              </p>
+              <input type="hidden" name="_subject" value="SaveByte website enquiry">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" maxlength="200" required aria-describedby="name-error">
+                <p id="name-error" class="field-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" maxlength="200" required aria-describedby="email-error" inputmode="email" spellcheck="false">
+                <p id="email-error" class="field-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="school">School <span class="optional">(optional)</span></label>
+                <input id="school" name="school" type="text" autocomplete="organization" maxlength="200">
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" maxlength="5000" required aria-describedby="message-error"></textarea>
+                <p id="message-error" class="field-error" hidden></p>
+              </div>
+              <div class="form-actions">
+                <button id="send" class="button" type="submit">Send message</button>
+              </div>
+              <p class="fine-print">Name, email and message are required. School can be left blank.</p>
+            </form>
+            <div id="thanks" class="thanks" hidden tabindex="-1">
+              <h2>Thank you</h2>
+              <p id="thanks-detail"></p>
+              <button id="thanks-reset" class="button secondary" type="button">Send another message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>© SaveByte</p>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
+    </footer>
+    <script src="js/site.js"></script>
+  </body>
+</html>

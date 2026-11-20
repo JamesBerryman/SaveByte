@@ -1,0 +1,19 @@
+{
+  "name": "SaveByte",
+  "short_name": "SaveByte",
+  "icons": [
+    {
+      "src": "images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#02102e",
+  "background_color": "#02102e",
+  "display": "standalone"
+}

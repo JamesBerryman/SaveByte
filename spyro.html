@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spyro — SaveByte</title>
+    <meta name="description" content="Spyro is a school library system for loans, returns and scanning, with a browser demo of sample data.">
+    <meta name="theme-color" content="#02102e">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="images/icon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="images/icon-16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="images/icon-180.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/demo-spyro.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <img src="images/icon-192.png" width="192" height="192" alt="">
+          <span>SaveByte</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="projects.html" aria-current="page">Projects</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap page">
+        <h1>Spyro</h1>
+        <p>A library system for the desk. Staff search the catalogue, check a book out, and take it back by the asset-tag sticker on that copy. Designed for schools. Pupils come from Arbor. The real app runs on Google Apps Script and Google Sheets.</p>
+        <h2>What you can do</h2>
+        <ul class="plain-list">
+          <li>Search by title, author, shelf or barcode, and filter to copies on the shelf.</li>
+          <li>Check out and return from the desk. A loan is usually 14 days, with a limit of 3 books.</li>
+          <li>Staff tools for the on-loan list, renewals, adding books, stock audit, pupil history, and an overdue-email summary.</li>
+        </ul>
+        <p class="muted">In this demo, type the asset tag instead of using a scanner. The overdue button only describes the emails. It does not send them.</p>
+        <div class="demo-bar">
+          <p>Demo with sample data. Nothing is saved, and no email is sent.</p>
+          <button type="button" id="spyro-reset">Reset demo</button>
+        </div>
+        <div id="spyro-root"></div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>© SaveByte</p>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+    <script src="js/demo-spyro.js"></script>
+  </body>
+</html>

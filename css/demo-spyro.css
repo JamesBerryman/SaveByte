@@ -1,0 +1,244 @@
+#spyro-root {
+  color: #f4efe8;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+#spyro-root .app {
+  background: #14131a;
+  border-radius: 12px;
+  overflow: hidden;
+  min-height: 520px;
+}
+
+#spyro-root .bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid #2c2836;
+}
+
+#spyro-root .logo { font-weight: 800; font-size: 1.4rem; }
+#spyro-root .ver {
+  margin-left: 0.35rem;
+  font-size: 0.75rem;
+  border: 1px solid #4c4166;
+  border-radius: 999px;
+  padding: 0.1rem 0.4rem;
+  color: #d4c4f5;
+}
+
+#spyro-root .staff-btn,
+#spyro-root .big,
+#spyro-root .chip,
+#spyro-root .tab,
+#spyro-root .mini,
+#spyro-root .primary,
+#spyro-root .text-btn {
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#spyro-root .staff-btn {
+  margin-left: auto;
+  background: transparent;
+  color: #f4efe8;
+  border: 2px solid #c4b2ea;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+}
+
+#spyro-root .sample {
+  margin: 0;
+  background: #3a3114;
+  color: #fde68a;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.4rem 0.6rem;
+}
+
+#spyro-root .stage { padding: 0.85rem; }
+
+#spyro-root input[type="search"],
+#spyro-root input[type="text"] {
+  width: 100%;
+  font: inherit;
+  color: #f4efe8;
+  background: #1d1b24;
+  border: 2px solid #3d3650;
+  border-radius: 12px;
+  padding: 0.65rem 0.75rem;
+}
+
+#spyro-root .actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.7rem 0;
+}
+
+#spyro-root .big {
+  flex: 1 1 160px;
+  border-radius: 12px;
+  padding: 0.8rem 0.6rem;
+  font-size: 1.05rem;
+  border: 2px solid transparent;
+}
+
+#spyro-root .out { background: #6d4eb5; color: #fff; }
+#spyro-root .back { background: transparent; color: #f4efe8; border-color: #6f8f86; }
+#spyro-root .chip {
+  border-radius: 999px;
+  border: 2px solid #4c4166;
+  background: transparent;
+  color: #d4c4f5;
+  padding: 0.45rem 0.7rem;
+}
+#spyro-root .chip[aria-pressed="true"] { background: #4c4166; color: #fff; }
+
+#spyro-root .table-scroll { overflow-x: auto; max-width: 100%; }
+#spyro-root table { width: 100%; border-collapse: collapse; min-width: 640px; }
+#spyro-root th {
+  text-align: left;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #b7ad9e;
+  padding: 0.25rem 0.4rem;
+}
+#spyro-root td {
+  background: #1d1b24;
+  padding: 0.55rem 0.4rem;
+  border-top: 6px solid #14131a;
+}
+#spyro-root .tag { font-family: ui-monospace, Consolas, monospace; color: #d6fff4; font-weight: 700; }
+#spyro-root .shelf { color: #b7f0d8; font-weight: 700; }
+#spyro-root .loan { color: #f3c98b; font-weight: 700; }
+#spyro-root .over { color: #fda4af; font-weight: 700; }
+
+#spyro-root .notice {
+  margin: 0 0 0.6rem;
+  padding: 0.45rem 0.6rem;
+  border-radius: 8px;
+  background: #14352c;
+  color: #d1fae5;
+  font-weight: 650;
+}
+#spyro-root .notice.bad { background: #3f1d24; color: #fecdd3; }
+
+#spyro-root .tabs { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.7rem; }
+#spyro-root .tab {
+  border-radius: 999px;
+  border: 1px solid #4c4166;
+  background: transparent;
+  color: #f4efe8;
+  padding: 0.35rem 0.65rem;
+}
+#spyro-root .tab[aria-current="page"] { background: #6d4eb5; border-color: #6d4eb5; }
+
+#spyro-root .counts { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.7rem; }
+#spyro-root .counts button {
+  font: inherit;
+  font-weight: 700;
+  background: #1d1b24;
+  color: #f4efe8;
+  border: 1px solid #3d3650;
+  border-radius: 10px;
+  padding: 0.45rem 0.6rem;
+  cursor: pointer;
+  text-align: left;
+}
+#spyro-root .counts button[aria-pressed="true"] { border-color: #c4b2ea; }
+#spyro-root .counts b { display: block; font-size: 1.2rem; }
+
+#spyro-root .mini, #spyro-root .primary, #spyro-root .text-btn {
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+}
+#spyro-root .mini { background: #2c2640; color: #f4efe8; border: 1px solid #6d4eb5; }
+#spyro-root .primary { background: #6d4eb5; color: #fff; border: 0; }
+#spyro-root .text-btn { background: transparent; color: #f4efe8; border: 1px solid #4c4166; }
+#spyro-root .primary:disabled { opacity: 0.5; cursor: not-allowed; }
+
+#spyro-root .modal-back {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 7, 12, 0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 40;
+}
+#spyro-root .modal {
+  width: min(560px, 100%);
+  background: #221e2c;
+  border: 1px solid #4c4166;
+  border-radius: 16px;
+  padding: 1rem;
+  max-height: min(86vh, 680px);
+  overflow: auto;
+}
+#spyro-root .modal h2 { margin: 0 0 0.4rem; }
+#spyro-root .step {
+  margin: 0.8rem 0 0.3rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #d4c4f5;
+}
+#spyro-root .pupil, #spyro-root .receipt, #spyro-root .queue {
+  background: #2c2640;
+  border-radius: 10px;
+  padding: 0.6rem 0.7rem;
+  margin-top: 0.4rem;
+}
+#spyro-root .receipt { background: #14352c; border: 2px solid #3d9a78; }
+#spyro-root .picks { list-style: none; margin: 0.35rem 0 0; padding: 0; }
+#spyro-root .picks button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #1d1b24;
+  color: #f4efe8;
+  border: 0;
+  border-bottom: 1px solid #3d3650;
+  padding: 0.45rem 0.55rem;
+  font: inherit;
+  cursor: pointer;
+}
+#spyro-root .row-actions { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.8rem; }
+#spyro-root .sub { color: #b7ad9e; margin: 0.2rem 0; }
+#spyro-root label { display: block; font-weight: 700; margin: 0.55rem 0 0.25rem; }
+#spyro-root .pager { display: flex; gap: 0.4rem; align-items: center; margin-top: 0.4rem; }
+
+@media (max-width: 700px) {
+  #spyro-root table { min-width: 0; }
+  #spyro-root thead { display: none; }
+  #spyro-root tr {
+    display: block;
+    background: #1d1b24;
+    margin: 0 0 0.5rem;
+    border-radius: 10px;
+    padding: 0.35rem 0.55rem;
+  }
+  #spyro-root td {
+    display: block;
+    border: 0;
+    background: transparent;
+    padding: 0.12rem 0;
+  }
+  #spyro-root td::before {
+    content: attr(data-label);
+    display: inline-block;
+    min-width: 5.2rem;
+    color: #b7ad9e;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+}
