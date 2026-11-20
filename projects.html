@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Projects — SaveByte</title>
-    <meta name="description" content="CRASH tracks Chromebook repairs, assets, loans and storage. Spyro is a school library system for loans, returns and scanning.">
-    <meta name="theme-color" content="#0e4f4c">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Silkscreen&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,560;8..60,650&display=swap" rel="stylesheet">
+    <meta name="description" content="Projects by James Berryman: CRASH and Spyro, apps designed for schools.">
+    <meta name="theme-color" content="#02102e">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="images/icon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="images/icon-16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="images/icon-180.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="css/site.css">
   </head>
   <body>
@@ -18,25 +18,7 @@
     <header class="site-header">
       <div class="wrap header-inner">
         <a class="brand" href="index.html">
-          <svg class="brand-mark" viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges">
-            <rect width="16" height="16" fill="#0e4f4c"/>
-            <g fill="#e7f7f4">
-              <rect x="7" y="2" width="2" height="1"/>
-              <rect x="6" y="3" width="4" height="1"/>
-              <rect x="5" y="4" width="6" height="2"/>
-              <rect x="6" y="6" width="4" height="1"/>
-              <rect x="7" y="7" width="2" height="3"/>
-            </g>
-            <g fill="#e2b04a">
-              <rect x="6" y="3" width="1" height="1"/>
-              <rect x="7" y="4" width="1" height="1"/>
-            </g>
-            <g fill="#08332f">
-              <rect x="9" y="5" width="2" height="1"/>
-              <rect x="8" y="6" width="2" height="1"/>
-              <rect x="8" y="8" width="1" height="2"/>
-            </g>
-          </svg>
+          <img src="images/icon-192.png" width="192" height="192" alt="">
           <span>SaveByte</span>
         </a>
         <nav class="nav" aria-label="Primary">
@@ -47,89 +29,24 @@
       </div>
     </header>
     <main id="main">
-      <div class="wrap">
-        <header class="page-intro">
-          <p class="kicker"><span class="pixel" aria-hidden="true"></span> Projects</p>
-          <h1>Two tools, built for the school day.</h1>
-          <p class="lede">Both apps are Google Apps Script web apps sitting on Google Sheets. Pupil records come from an Arbor feed. There is no extra server to run. The pictures below are illustrations filled with fictional people, books and serials. On a phone, scroll each picture sideways to read it.</p>
-        </header>
-
-        <article class="project crash" id="crash">
-          <p class="kicker"><span class="pixel" aria-hidden="true"></span> 01</p>
-          <h2>CRASH</h2>
-          <p class="stack">Chromebook Repair, Asset and Storage Hub · Google Apps Script · Google Sheets · Arbor · Google Admin</p>
-          <div class="prose">
-            <p>CRASH is the Chromebook register for the IT team. It shows who a device is assigned to, whether it is out on loan, which trolley or office it lives in, and what is booked in for repair. Google Admin device sync keeps serials, models, status and the last sign-in up to date. Arbor supplies the pupil roll used when a machine is assigned.</p>
-            <p>Devices and repairs are limited to IT staff. Teachers get a separate lookup: search a pupil or a serial and see the device, the last sign-in, and whether it is in repair.</p>
-          </div>
-          <h3>Key features</h3>
-          <ul class="feature-list">
-            <li>Search the register by serial, name or email.</li>
-            <li>Assign a Chromebook to a pupil, a member of staff, or a storage place such as the IT office or a trolley.</li>
-            <li>Mark a device as a loan, and return that loan to the IT office in one step.</li>
-            <li>Flag a machine when the last Google sign-in does not match the person it is assigned to.</li>
-            <li>Log repairs for screen, power, battery, hinge, keyboard, operating system, touchpad, Wi-Fi, water damage, and anything else.</li>
-            <li>Move a repair through new, awaiting collection, awaiting payment, third party, and resolved, with booked, repaired and resolved dates.</li>
-            <li>Open repair insights, and email a pupil’s tutor when a repair needs them.</li>
-            <li>Note devices and pupils that keep coming back for repair.</li>
-            <li>Show the last Google Admin and Arbor sync on the page, and keep a nightly backup.</li>
-          </ul>
-          <h3>Screens</h3>
-          <div class="shots">
-            <figure>
-              <div class="shot-scroll" tabindex="0">
-                <img src="images/crash-devices.png" width="1440" height="900" alt="CRASH devices screen with fictional pupils. The register lists demo serials, loan and unmatched tags, storage in the IT office, and Google and Arbor sync times.">
-              </div>
-              <figcaption>Devices: assignments, loans, storage and the latest sync.</figcaption>
-            </figure>
-            <figure>
-              <div class="shot-scroll" tabindex="0">
-                <img src="images/crash-repairs.png" width="1440" height="900" alt="CRASH repairs screen with fictional repair jobs. Status filters run from New to Resolved, and the rows show demo serials, categories and notes.">
-              </div>
-              <figcaption>Repairs: the queue, from a new screen crack to a resolved Wi-Fi fault.</figcaption>
-            </figure>
-          </div>
-        </article>
-
-        <article class="project spyro" id="spyro">
-          <p class="kicker"><span class="pixel" aria-hidden="true"></span> 02</p>
-          <h2>Spyro</h2>
-          <p class="stack">School library system · Google Apps Script · Google Sheets · Arbor</p>
-          <div class="prose">
-            <p>Spyro is the page the library desk works in. Staff search the catalogue, check a book out, and take it back by scanning the asset-tag sticker on that copy. The pupil list is pulled from Arbor, including leavers, so a book can still be traced after someone has left.</p>
-            <p>Lending and returning stay on the front page. The staff area — dashboard, insights, stock audit, adding books, the full catalogue, pupil history, overdue emails and saved reports — opens for the signed-in Google account.</p>
-          </div>
-          <h3>Key features</h3>
-          <ul class="feature-list">
-            <li>Search by title, author, shelf or barcode, and filter to copies that are on the shelf.</li>
-            <li>Check out and return from large desk buttons, with a receipt left on screen and the cursor ready for the next scan.</li>
-            <li>Find a pupil by name, UPN, registration form, or the Arbor student ID printed on the library card.</li>
-            <li>Lend for a set number of days (14 unless the school changes it) and stop at a per-pupil limit, usually 3, with a staff override for one extra book.</li>
-            <li>Tie each loan and return to the asset tag on that copy, so a shared ISBN cannot clear the wrong book.</li>
-            <li>Renew from the on-loan list. A book that is already overdue has to come back first.</li>
-            <li>Add copies by looking up an ISBN, then scanning each asset tag. A stock audit can record that a sticker was seen without changing the loan.</li>
-            <li>Show the whole catalogue, pupil history, and leavers who still have books out.</li>
-            <li>Send overdue email as one message per family, and skip a book that was already emailed in the last week.</li>
-            <li>Scan with a USB scanner, or with the camera (including a photo when the live camera is blocked).</li>
-            <li>Save an overdue report and an insights report back to the spreadsheet, ready to print or save as PDF.</li>
-          </ul>
-          <h3>Screens</h3>
-          <div class="shots">
-            <figure>
-              <div class="shot-scroll" tabindex="0">
-                <img src="images/spyro-catalogue.png" width="1440" height="900" alt="Spyro catalogue on a dark page. Fictional books can be searched, with Check out book and Return book buttons, and a sample-data banner.">
-              </div>
-              <figcaption>Catalogue: the desk’s front page, with the two buttons used all day.</figcaption>
-            </figure>
-            <figure>
-              <div class="shot-scroll" tabindex="0">
-                <img src="images/spyro-checkout.png" width="1440" height="900" alt="Spyro check-out window with the fictional pupil Alex Example selected, a demo asset tag, and a receipt for The Invented Island.">
-              </div>
-              <figcaption>Check out: a pupil selected, the asset tag scanned, and the receipt still on screen.</figcaption>
-            </figure>
-          </div>
-          <p class="sample-note">Every name, email, serial, barcode and book title in these pictures is made up. They are not records from a school.</p>
-        </article>
+      <div class="wrap page">
+        <h1>Projects</h1>
+        <p>Apps I’ve made. Open one for a short description and a demo that runs in the browser.</p>
+        <!-- To add a project, copy an <li> and point it at the new page. See README. -->
+        <ul class="cards">
+          <li>
+            <a class="card" href="crash.html">
+              <h2>CRASH</h2>
+              <p>Chromebook repairs, assets, loans and storage. Designed for schools.</p>
+            </a>
+          </li>
+          <li>
+            <a class="card" href="spyro.html">
+              <h2>Spyro</h2>
+              <p>Library loans, returns and scanning. Designed for schools.</p>
+            </a>
+          </li>
+        </ul>
       </div>
     </main>
     <footer class="site-footer">
