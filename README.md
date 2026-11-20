@@ -1,13 +1,16 @@
 # SaveByte
 
-Static website for SaveByte, where James Berryman keeps the apps he makes. CRASH and Spyro are designed for schools. The pages are plain HTML, CSS and JavaScript so [GitHub Pages](https://pages.github.com/) can serve them with no build step and no server.
+Static website for SaveByte, James Berryman’s small UK brand for the school IT apps he builds as a hobby. The pages are plain HTML, CSS and JavaScript so [GitHub Pages](https://pages.github.com/) can serve them with no build step and no server.
 
-- Home is a short introduction.
-- [Projects](projects.html) is a list of cards. Each app has its own page: [CRASH](crash.html) and [Spyro](spyro.html).
-- Each project page includes a demo that runs in the browser. The data is fictional. Nothing is saved to a server, and the demos do not call Arbor or Google.
+- Home introduces SaveByte.
+- Projects describes [CRASH](projects.html#crash) (Chromebook repairs, assets, loans and storage) and [Spyro](projects.html#spyro) (the library desk).
 - Contact posts a form to [Formspree](https://formspree.io).
 
-The apps themselves stay in their own private repositories: <https://github.com/JamesBerryman/crash> and <https://github.com/JamesBerryman/spyro>. This site does not contain their code. The CRASH changelog on this site is a short copy for visitors. The list in the app is the one to keep up to date.
+The apps themselves stay in their own private repositories: <https://github.com/JamesBerryman/crash> and <https://github.com/JamesBerryman/spyro>. This site does not contain their code. The CRASH pictures are mockups filled with fictional names and serials. The Spyro pictures are screenshots of the catalogue and show books only.
+
+## Header logo
+
+The mark next to the SaveByte name is `images/logo.svg`. Replace that one file to swap it. The favicon is separate and stays as `favicon.ico`, `images/icon-16.png`, `images/icon-32.png`, `images/icon-180.png` (apple touch icon), `images/icon-192.png` and `images/icon-512.png`, listed in `site.webmanifest`.
 
 ## Preview locally
 
@@ -18,19 +21,6 @@ python3 -m http.server 8080
 ```
 
 Open <http://localhost:8080>. Use a local server rather than opening the files directly, so paths and the contact script behave as they will on Pages.
-
-## Add a project
-
-The projects index is the list in `projects.html`. To add one:
-
-1. Copy `crash.html` to a new file, for example `nova.html`. (Copy `spyro.html` instead if that page is closer to what you want.)
-2. Change the `<title>`, the heading, the short description, and the demo. If the new app needs a demo, add `js/demo-nova.js` and `css/demo-nova.css`, and keep every name and number fictional. Do not call a live API.
-3. In `projects.html`, copy an `<li>` inside `<ul class="cards">` and point the link at the new page.
-4. Leave the header as Home, Projects and Contact. The new app shows up from the projects list.
-
-## CRASH changelog
-
-`crash.html` shows the latest two versions under **Latest changes**, and links to the full list in the demo. That list matches the changelog in the CRASH app (v1.0 through v1.6). When CRASH ships a new version, update those two places on this site. Do not edit the crash repository from here; the changelog in the app stays the original.
 
 ## Turn on GitHub Pages
 
