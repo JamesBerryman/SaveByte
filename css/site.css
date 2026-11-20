@@ -119,10 +119,17 @@ a:hover {
 
 .brand-mark {
   display: block;
-  width: 32px;
-  height: 32px;
-  box-shadow: 3px 3px 0 var(--gold-soft);
+  height: 48px;
+  width: auto;
+  max-width: min(240px, 62vw);
   flex-shrink: 0;
+}
+
+.home-logo {
+  display: block;
+  width: min(380px, 100%);
+  height: auto;
+  margin: 0 0 1.15rem;
 }
 
 .nav {

@@ -10,7 +10,7 @@ The apps themselves stay in their own private repositories: <https://github.com/
 
 ## Header logo
 
-The mark next to the SaveByte name is `images/logo.svg`. Replace that one file to swap it. The favicon is separate and stays as `favicon.ico`, `images/icon-16.png`, `images/icon-32.png`, `images/icon-180.png` (apple touch icon), `images/icon-192.png` and `images/icon-512.png`, listed in `site.webmanifest`.
+The logo in the header and on the home page is `images/savebyte-logo.png`. Replace that one file to swap it. The favicon is separate: `favicon.ico`, `images/icon-16.png`, `images/icon-32.png`, `images/icon-180.png` (apple touch icon), and the manifest icons `images/icon-192.png` and `images/icon-512.png`.
 
 ## Preview locally
 
