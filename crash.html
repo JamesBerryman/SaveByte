@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRASH — SaveByte</title>
+    <meta name="description" content="CRASH tracks Chromebook repairs, assets, loans and storage. Spyro is a school library system for loans, returns and scanning.">
+    <meta name="theme-color" content="#0e4f4c">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="images/icon-32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="images/icon-16.png" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="images/icon-180.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=Silkscreen&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,560;8..60,650&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="index.html">
+          <!-- Header logo. Replace images/savebyte-logo.png to swap it. -->
+          <img class="brand-mark" src="images/savebyte-logo.png" width="1935" height="640" alt="SaveByte">
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <!--
+            To add a project to this menu, copy one <a> line below onto every page
+            (index.html, crash.html, spyro.html, bytes.html, contact.html)
+            and add a new HTML file for that project.
+          -->
+          <a href="index.html">Home</a>
+          <a href="crash.html" aria-current="page">CRASH</a>
+          <a href="spyro.html">Spyro</a>
+          <a href="bytes.html">Bytes</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <div class="wrap">
+        <header class="page-intro">
+          <p class="kicker"><span class="pixel" aria-hidden="true"></span> Projects</p>
+          <h1>Tools built for the school day..</h1>
+          <p class="lede">Both apps are Google Apps Script web apps built on Google Sheets, with pupil records pulled from an MIS feed, so there's no extra server to run. The CRASH screenshots use made-up names and serial numbers, and the Spyro screenshots show book details only. On a phone, swipe sideways to see each screenshot in full.</p>
+        </header>
+
+        <article class="project crash" id="crash">
+          <p class="kicker"><span class="pixel" aria-hidden="true"></span> 01</p>
+          <h2>CRASH</h2>
+          <p class="stack">Chromebook Repair, Asset and Storage Hub · Google Apps Script ·</p>
+          <div class="prose">
+            <p>CRASH is the Chromebook register for the IT team. It shows who a device is assigned to, whether it is out on loan, which trolley or office it lives in, and what is booked in for repair. Google Admin device sync keeps serials, models, status and the last sign-in up to date. MIS supplies the pupil roll used when a machine is assigned.</p>
+            <p>Devices and repairs are limited to IT staff. Teachers get a separate lookup: search a pupil or a serial and see the device, the last sign-in, and whether it is in repair.</p>
+          </div>
+          <h3>Key features</h3>
+          <ul class="feature-list">
+            <li>Search the register by serial, name or email.</li>
+            <li>Assign a Chromebook to a pupil, a member of staff, or a storage place such as the IT office or a trolley.</li>
+            <li>Mark a device as a loan, and return that loan to the IT office in one step.</li>
+            <li>Flag a machine when the last Google sign-in does not match the person it is assigned to.</li>
+            <li>Log repairs for screen, power, battery, hinge, keyboard, operating system, touchpad, Wi-Fi, water damage, and anything else.</li>
+            <li>Move a repair through new, awaiting collection, awaiting payment, third party, and resolved, with booked, repaired and resolved dates.</li>
+            <li>Open repair insights, and email a pupil’s tutor when a repair needs them.</li>
+            <li>Note devices and pupils that keep coming back for repair.</li>
+            <li>Show the last Google Admin and MIS sync on the page, and keep a nightly backup.</li>
+          </ul>
+          <h3>Screens</h3>
+          <div class="shots">
+            <figure>
+              <div class="shot-scroll" tabindex="0">
+                <img src="images/crash-devices.png" width="1440" height="900" alt="CRASH devices screen with fictional pupils. The register lists demo serials, loan and unmatched tags, storage in the IT office, and Google and MIS sync times.">
+              </div>
+              <figcaption>Devices: assignments, loans, storage and the latest sync.</figcaption>
+            </figure>
+            <figure>
+              <div class="shot-scroll" tabindex="0">
+                <img src="images/crash-repairs.png" width="1440" height="900" alt="CRASH repairs screen with fictional repair jobs. Status filters run from New to Resolved, and the rows show demo serials, categories and notes.">
+              </div>
+              <figcaption>Repairs: the queue, from a new screen crack to a resolved Wi-Fi fault.</figcaption>
+            </figure>
+          </div>
+          <p>A demo is available on request. <a href="contact.html">Contact</a>.</p>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>© SaveByte</p>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>
