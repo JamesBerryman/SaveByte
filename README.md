@@ -3,7 +3,7 @@
 Static website for SaveByte, James Berryman’s small UK brand for the school IT apps he builds as a hobby. The pages are plain HTML, CSS and JavaScript so [GitHub Pages](https://pages.github.com/) can serve them with no build step and no server.
 
 - Home introduces SaveByte.
-- Projects describes [CRASH](projects.html#crash) (Chromebook repairs, assets, loans and storage) and [Spyro](projects.html#spyro) (the library desk).
+- [CRASH](crash.html) (Chromebook repairs, assets, loans and storage), [Spyro](spyro.html) (the library desk) and [Bytes](bytes.html) are in the top menu. `projects.html` redirects to the home page.
 - Contact posts a form to [Formspree](https://formspree.io).
 
 The apps themselves stay in their own private repositories: <https://github.com/JamesBerryman/crash> and <https://github.com/JamesBerryman/spyro>. This site does not contain their code. The CRASH pictures are mockups filled with fictional names and serials. The Spyro pictures are screenshots of the catalogue and show books only.

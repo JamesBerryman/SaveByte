@@ -322,7 +322,8 @@ h3 {
   border-top-color: var(--crash);
 }
 
-.card.spyro {
+.card.spyro,
+.card.SPYRO {
   border-top-color: var(--spyro);
 }
 
